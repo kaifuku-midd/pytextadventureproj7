@@ -1,0 +1,54 @@
+{
+  "__metadata__": {
+    "title": "Adventure",
+    "start": "classroom"
+  },
+  "classroom": {
+    "name": "classroom",
+    "description": "You're in a lecture hall, for some reason.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "A door leads into the hall."
+      }
+    ],
+    "items": []
+  },
+  "hallway": {
+    "name": "hallway",
+    "description": "This is a hallway with many locked doors.",
+    "exits": [
+      {
+        "destination": "classroom",
+        "description": "Go back into the classroom."
+      },
+      {
+        "destination": "staircase",
+        "description": "A door with the words STAIRS is stuck open."
+      }
+    ],
+    "items": []
+  },
+  "staircase": {
+    "name": "staircase",
+    "description": "The staircase leads downward.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "Nevermind; go back to the hallway."
+      },
+      {
+        "destination": "outside",
+        "description": "A door at the bottom of the stairs has a red, glowing, EXIT sign."
+      }
+    ],
+    "items": []
+  },
+  "outside": {
+    "name": "outside",
+    "description": "You've escaped! It's cold out.",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  }
+}
